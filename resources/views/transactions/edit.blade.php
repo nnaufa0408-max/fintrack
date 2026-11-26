@@ -1,0 +1,2 @@
+@extends('layouts.app') @section('title','Edit Transaksi') @section('page-title','Edit Transaksi')
+@section('content')<div class="mx-auto max-w-3xl"><div class="mb-6"><h2 class="text-xl font-bold text-[#14264f]">Ubah transaksi</h2><p class="mt-1 text-sm text-slate-500">Perbarui informasi transaksi berikut.</p></div><form method="POST" action="{{ route('transaksi.update',$transaction) }}" class="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm sm:p-8">@csrf @method('PUT') @include('transactions._form')</form></div>@endsection

@@ -1,0 +1,2 @@
+@extends('layouts.app') @section('title','Edit Kategori') @section('page-title','Edit Kategori')
+@section('content')<div class="mx-auto max-w-xl"><h2 class="mb-5 text-xl font-bold text-[#14264f]">Ubah kategori</h2><form method="POST" action="{{ route('kategori.update',$category) }}" class="rounded-2xl bg-white p-6 shadow-sm">@csrf @method('PUT') @include('categories._form')</form></div>@endsection

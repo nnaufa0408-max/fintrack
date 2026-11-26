@@ -1,0 +1,2 @@
+@extends('layouts.app') @section('title','Tambah Transaksi') @section('page-title','Tambah Transaksi')
+@section('content')<div class="mx-auto max-w-3xl"><div class="mb-6"><h2 class="text-xl font-bold text-[#14264f]">Catat transaksi baru</h2><p class="mt-1 text-sm text-slate-500">Isi detail pemasukan atau pengeluaranmu.</p></div><form method="POST" action="{{ route('transaksi.store') }}" class="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm sm:p-8">@csrf @include('transactions._form')</form></div>@endsection

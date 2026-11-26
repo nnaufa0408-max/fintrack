@@ -1,0 +1,1 @@
+{{-- Flux is installed through Composer and its scripts/styles are loaded in the layouts. --}}

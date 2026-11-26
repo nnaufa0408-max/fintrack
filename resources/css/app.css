@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import "../../vendor/livewire/flux/dist/flux.css";
+@source "../views";
+@source "../../vendor/livewire/flux/dist";
+:root { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #172554; background: #f5f8ff; }
+[x-cloak] { display: none !important; }
+@layer components {
+  .nav-link { @apply flex items-center gap-3 rounded-xl px-3 py-3 text-blue-100/80 transition hover:bg-white/10 hover:text-white; }
+  .nav-active { @apply bg-sky-400 font-semibold text-[#10234b] shadow-lg shadow-sky-950/10 hover:bg-sky-300 hover:text-[#10234b]; }
+  .form-label { @apply mb-1.5 block text-sm font-semibold text-slate-700; }
+  .form-input { @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-sky-400 focus:ring-4 focus:ring-sky-100; }
+}
